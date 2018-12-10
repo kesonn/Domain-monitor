@@ -25,7 +25,9 @@ while_update.py 域名监测功能、遍历mongo库内数据 对比出变化域�
 因为获取http响应的是基于chrome浏览器，模拟chrome访问，并且访问后进行多个javascript执行，所以访问每个url会比普通urllib时间要长很多，所以我添加了简易版chrome线程池以便进行多线程同步访问以便加快速度，默认是5个chrome同时模拟访问。
 
 环境搭建
+
 必须执行
+
 cd Domain-monitor
 
 sudo sh install.sh
