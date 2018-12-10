@@ -26,7 +26,7 @@ while_update.py 域名监测功能、遍历mongo库内数据 对比出变化域�
 
 环境搭建
 必须执行
-cd get_domain
+cd Domain-monitor
 
 sudo sh install.sh
 
@@ -123,7 +123,7 @@ vim config.py：
 ```
         self.tar_config = 'target/qq.json'
         # code directory
-        self.path = r'/home/get_domain/get_domain'
+        self.path = r'/home/Domain-monitor/Domain-monitor'
         with open('%s/%s' % (self.path, self.tar_config), 'r') as load_f:
             load_dict = json.load(load_f)
         self.domain = load_dict['domain']
